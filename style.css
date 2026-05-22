@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300;400;600;700&family=Sacramento&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Merriweather', serif;
+    text-align:center;
+    color:#40514E;
+    background:#F9FDFD;
+    line-height:1.8;
+}
+
+/* HERO SECTION */
+
+.hero{
+    background:#EAF6F6;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:50px 20px;
+    position:relative;
+    overflow:hidden;
+}
+
+/* Decorative Clouds */
+
+.hero::before{
+    content:"☁";
+    position:absolute;
+    top:80px;
+    left:120px;
+    font-size:5rem;
+    opacity:0.25;
+}
+
+.hero::after{
+    content:"☁";
+    position:absolute;
+    top:120px;
+    right:140px;
+    font-size:5rem;
+    opacity:0.25;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.profile-img{
+    width:190px;
+    height:190px;
+    border-radius:50%;
+    object-fit:cover;
+
+    border:6px solid #66BFBF;
+
+    margin-bottom:30px;
+
+    box-shadow:0 8px 30px rgba(102,191,191,0.3);
+}
+
+.hero h1{
+    font-size:5rem;
+    color:#66BFBF;
+    font-family:'Sacramento', cursive;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.5rem;
+    color:#11999E;
+    font-family:'Montserrat', sans-serif;
+    margin-bottom:35px;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+    padding:14px 38px;
+
+    background:#66BFBF;
+    color:white;
+
+    border-radius:10px;
+    text-decoration:none;
+
+    font-family:'Montserrat', sans-serif;
+    font-weight:600;
+
+    transition:0.3s ease;
+}
+
+.btn:hover{
+    background:#11999E;
+    transform:translateY(-3px);
+}
+
+/* GENERAL SECTION */
+
+.section{
+    padding:100px 20px;
+}
+
+.section h2{
+    font-size:3rem;
+    color:#66BFBF;
+    margin-bottom:40px;
+
+    font-family:'Montserrat', sans-serif;
+}
+
+.section p{
+    max-width:800px;
+    margin:auto;
+    font-size:1.1rem;
+}
+
+/* LIGHT SECTION */
+
+.light{
+    background:white;
+}
+
+/* ABOUT */
+
+#about{
+    background:#ffffff;
+}
+
+/* RESUME */
+
+#resume{
+    background:#F4FBFB;
+}
+
+.resume-block{
+    background:white;
+
+    width:320px;
+
+    margin:25px auto;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+
+    transition:0.3s ease;
+}
+
+.resume-block:hover{
+    transform:translateY(-8px);
+}
+
+.resume-block h3{
+    color:#11999E;
+    margin-bottom:20px;
+    font-family:'Montserrat', sans-serif;
+}
+
+.resume-block ul{
+    list-style:none;
+}
+
+.resume-block li{
+    margin:10px 0;
+}
+
+/* PROJECTS */
+
+#projects{
+    background:white;
+}
+
+.project-container{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+    margin-top:50px;
+}
+
+.project-card{
+    width:320px;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+
+    transition:0.3s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.project-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.project-card h3{
+    color:#11999E;
+    margin:20px 0 10px;
+    font-family:'Montserrat', sans-serif;
+}
+
+.project-card p{
+    padding:0 20px 25px;
+}
+
+/* CONTACT */
+
+#contact{
+    background:#EAF6F6;
+}
+
+#contact p{
+    margin:15px auto;
+    font-size:1.1rem;
+}
+
+/* FOOTER */
+
+footer{
+    background:#66BFBF;
+    color:white;
+    padding:35px 20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:3.5rem;
+    }
+
+    .hero p{
+        font-size:1.2rem;
+    }
+
+    .section{
+        padding:70px 20px;
+    }
+
+    .section h2{
+        font-size:2.3rem;
+    }
+
+    .profile-img{
+        width:150px;
+        height:150px;
+    }
+
+    .resume-block{
+        width:90%;
+    }
+
+    .project-card{
+        width:90%;
+    }
+
+    .hero::before,
+    .hero::after{
+        display:none;
+    }
+}
